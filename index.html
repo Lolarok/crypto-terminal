@@ -5,34 +5,38 @@
 <style>
 :root{--bg:#0a0a12;--surface:#12121e;--border:#2a2a40;--accent:#9945ff;--cyan:#14f195;--text:#e8e8f0;--dim:#6a6a8a}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
-.card{max-width:640px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:40px;text-align:center}
-.emoji{font-size:48px;margin-bottom:12px}
-h1{font-size:24px;font-weight:700;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.desc{color:var(--dim);font-size:14px;line-height:1.6;margin-bottom:24px}
-.badge{display:inline-block;padding:4px 12px;border-radius:8px;font-size:11px;font-weight:600;background:rgba(153,69,255,.15);color:var(--accent);margin-bottom:16px}
-.links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-block;padding:8px 20px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;transition:.2s}
-.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:#7c3aed}
-.btn-secondary{background:var(--border);color:var(--text)}.btn-secondary:hover{border-color:var(--accent)}
-.features{text-align:left;margin:20px 0;display:grid;gap:8px}
-.feat{display:flex;align-items:center;gap:8px;font-size:13px}.feat .c{color:var(--cyan)}
-a{color:var(--accent)}footer{margin-top:24px;font-size:11px;color:var(--dim)}
+body{font-family:Inter,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:20px}
+.card{max-width:640px;margin:0 auto;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px;text-align:center}
+.emoji{font-size:56px;margin-bottom:10px}
+h1{font-size:22px;font-weight:700;margin-bottom:6px;background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.badge{display:inline-block;padding:4px 14px;border-radius:8px;font-size:11px;font-weight:600;background:rgba(153,69,255,.15);color:var(--accent);margin-bottom:14px;letter-spacing:.5px}
+.desc{color:var(--dim);font-size:14px;line-height:1.6;margin-bottom:18px}
+.features{text-align:left;margin:0 0 20px 0}
+.feat{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--dim);padding:5px 0;border-bottom:1px solid var(--border)}
+.feat:last-child{border-bottom:none}
+.feat .c{color:var(--cyan);min-width:18px}
+.links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+.btn{display:inline-block;padding:10px 22px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;transition:.2s}
+.btn-p{background:var(--accent);color:#fff}.btn-p:hover{background:#7c3aed}
+.btn-s{background:var(--border);color:var(--text)}.btn-s:hover{border-color:var(--accent)}
+footer{margin-top:16px;font-size:11px;color:var(--dim)}
+footer a{color:var(--accent);text-decoration:none}
 </style></head>
 <body><div class="card">
 <div class="emoji">⌨️</div>
-<div class="badge">TUI DASHBOARD</div>
+<div class="badge">TUI</div>
 <h1>Crypto Terminal</h1>
-<p class="desc">Live crypto terminal dashboard — prices, sparklines, scoring, all in your terminal. Dual implementation in Node.js and Go.</p>
-<div class="features"><div class="feat"><span class="c">✅</span> Real-time CoinGecko data</div>
-<div class="feat"><span class="c">✅</span> Fear & Greed index</div>
-<div class="feat"><span class="c">✅</span> Token scoring engine</div>
-<div class="feat"><span class="c">✅</span> Node.js implementation</div>
-<div class="feat"><span class="c">✅</span> Go BubbleTea TUI</div>
+<p class="desc">Dashboard crypto live nel terminale — prezzi, sparkline, scoring. Doppia implementazione: Node.js (semplice, zero deps) e Go con BubbleTea/TUI.</p>
+<div class="features"><div class="feat"><span class="c">✅</span> Real-time da CoinGecko</div>
+<div class="feat"><span class="c">✅</span> Fear & Greed Index</div>
+<div class="feat"><span class="c">✅</span> Token scoring automatico</div>
+<div class="feat"><span class="c">✅</span> Tabs: Overview, Trending, Detail, Global</div>
+<div class="feat"><span class="c">✅</span> Node.js + Go (BubbleTea)</div>
+<div class="feat"><span class="c">✅</span> Zero setup — npm start o go run</div>
 </div>
 <div class="links">
-<a class="btn btn-primary" href="https://github.com/Lolarok/crypto-terminal">GitHub Repo</a>
-<a class="btn btn-secondary" href="https://github.com/Lolarok">All Projects</a>
+<a class="btn btn-p" href="https://github.com/Lolarok/crypto-terminal">GitHub Repo</a>
+<a class="btn btn-s" href="https://github.com/Lolarok">All Projects</a>
 </div>
 <footer>Built by <a href="https://github.com/Lolarok">Lolarok</a> - Part of the Open Source collection</footer>
 </div></body></html>
