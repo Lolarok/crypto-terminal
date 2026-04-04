@@ -1,0 +1,22 @@
+{
+  "name": "crypto-terminal-node",
+  "version": "1.0.0",
+  "description": "⚡ Live crypto TUI dashboard — prices, sparklines, scoring, all in your terminal",
+  "main": "ct.js",
+  "bin": {
+    "crypto-terminal": "ct.js"
+  },
+  "scripts": {
+    "start": "node ct.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["crypto", "terminal", "tui", "dashboard", "coingecko"],
+  "author": "Lolarok",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
